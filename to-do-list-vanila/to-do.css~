@@ -1,0 +1,28 @@
+.to-do-ul {
+  display: flex;
+  flex-direction: column;
+  background-color: #ddd;
+  border: 1px solid #aaa;
+  width: 20vw;
+  margin-top: 10vh;
+  margin-left: 40vw;
+  box-shadow: 1px 1px 3px #888888;
+}
+
+.to-do-ul li{
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container-div {
+  margin-left: 40vw;
+}
+
+.input-container-div .btn{
+  box-shadow: 2px 2px 8px #888888;
+}
+
+
+.input-container-div .btn:hover{
+  box-shadow: none;
+}

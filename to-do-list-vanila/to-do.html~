@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script type="text/javascript" src="src.js"></script>
+    <link rel="stylesheet" type="text/css" media="all" href="to-do.css">
+
+    <meta charset="utf-8">
+    <title>To do</title>
+  </head>
+
+  <body>
+    <ul class="to-do-ul" id="to-do-ul">
+    </ul>
+    <div class="input-container-div">
+      <input type="text" id="add-button-input-text"/>
+      <input class="btn btn-primary" type="button" value="add" onclick="newListItem(document.getElementById('add-button-input-text').value)">
+    </div>
+  </body>
+</html>

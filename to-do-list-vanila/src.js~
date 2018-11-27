@@ -1,0 +1,29 @@
+function newListItem(item){
+  document.getElementById("to-do-ul").innerHTML += "<li>"+"- "+item+"</li>";
+  document.getElementById("add-button-input-text").value = "";
+  //localStorage.todoList = localStorage.todoList || "~~~~~";
+  //localStorage.todoList += item + "~~~~~";
+  document.getElementById("to-do-ul").
+  window.reload()
+}
+/*console.log(localStorage.todoList)
+function renderLocalStorage(){
+  var localTodoList =  localStorage.todoList.split("~~~~~");
+  for(var i = 0; i < localTodoList.length; i++){
+    if(localTodoList[i]){
+      document.getElementById("to-do-ul").innerHTML += "<li class='list-group-item' id='"+i+"'> <input type='checkbox' onclick='removeThisListItem(\""+i+"\")'/>"+"- "+ localTodoList[i] +"</li>";
+    }
+  }
+};
+*/
+function removeThisListItem(id){
+  var element = document.getElementById(id)
+  element.parentNode.removeChild(element);
+  //var indexOfRemovedItem = localStorage.todoList.indexOf(element.textContent)
+  //console.log(indexOfRemovedItem)
+  //localStorage.todoList =
+}
+window.addEventListener("load", function(){
+renderLocalStorage();
+  var valueAdder = document.getElementById("add-button-input-text").value;
+})

@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <script type="text/javascript" src="src.js"></script>
+    <link rel="stylesheet" type="text/css" media="all" href="to-do.css">
+
+    <meta charset="utf-8">
+    <title>To do</title>
+  </head>
+
+  <body>
+    <ul class="to-do-ul" id="to-do-ul">
+    </ul>
+    <div class="input-container-div">
+      <input type="text" id="add-button-input-text"/>
+      <input class="btn btn-primary" type="button" value="add" onclick="newListItem(document.getElementById('add-button-input-text').value)">
+    </div>
+  </body>
+</html>

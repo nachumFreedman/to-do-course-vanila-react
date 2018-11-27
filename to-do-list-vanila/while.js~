@@ -1,0 +1,73 @@
+var addressNumber = '35';
+var addressStreet = 'ahad ha\'am';
+var country = 'Israel';
+var global_address = [];
+      
+var global_address = global_address.concat('I go to class at', addressNumber, addressStreet, country);
+
+var pets = ["cat","dog","fish","rabbit","cow"];
+
+pets.push("horse");
+
+for(var i = 0; i < pets.length ; i++){
+  alert(pets[i])
+};
+
+var chihuahua = "chihuahua";
+
+pets.splice(3, 1);
+console.log(chihuahua.length);
+
+
+console.log(global_address);
+console.log(pets[1]);
+console.log(pets);
+
+var birthYear = 1993;
+var futureYear = 2020;
+
+console.log('I will be', futureYear - birthYear, 'in', futureYear)
+
+var numberPrompt = prompt('give me a number')
+
+if (numberPrompt % 2 === 0){console.log('yay it\'s even')} else {console.log('boo it\'s not even')}
+
+var x = '2';
+var y = '3';
+
+if(x > y){
+  console.log(x)
+ } else {
+   console.log(y)
+ };
+
+var userLang = prompt('what language do you speak?').toLowerCase();
+
+console.log(userLang)
+if (userLang === 'french') {
+  alert('bonjour')
+} else if (userLang === 'english') {
+    alert('hello')
+} else if (userLang === 'hebrew'){
+  console.log('Shalom')
+} else {alert('learn a language please. :)')
+};
+
+var grade = prompt('can you give me a grade');
+
+var coefficient = prompt('can you give me a coefficient')
+
+var userGrade = [];
+userGrade.push(grade)
+var userCoefficient = [];
+userCoefficient.push(coefficient)
+
+
+var average = userGrade * userCoefficient / 2;
+
+if (userGrade == ''){prompt('can you please give me a grade')}
+if (userCoefficient == ''){prompt('can you please give me a coefficient')}
+
+alert('average = ', average)
+
+

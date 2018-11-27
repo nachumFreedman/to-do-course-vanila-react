@@ -1,0 +1,172 @@
+
+/*
+   function great(greeting, friend) {
+   console.log(greeting + ", " + friend)
+   var friendAge = prompt('how old are you ' + friend + '?')
+   }
+   var friendVar = prompt('what is your name?');
+   var greetingVar = 'hello';
+   great(greetingVar, friendVar);
+
+   //////
+
+
+   console.log("the value of x is:" + x);
+
+   switch(true){
+   case(x <= 25):
+   console.log("smaller than 25")
+   break;
+   case( (x>25) && (x<=50) ):
+   console.log('between 25 and 50');
+   break;
+   case( (x>50) && (x<=75) ):
+   console.log('between 25 and 50');
+   break;
+   
+   default:
+   console.log("between 75 and 100")
+   }
+
+   //Write a JavaScript function to count the occurrence of a substring in a string
+
+   var sub = 'blue';
+   var string = "blue blue green blue blue blue"
+
+   console.log(
+   string.match( new RegExp(sub, 'g') ).length
+   );
+
+   let r = string.split(sub);
+   let repl = r.join('');
+   console.log(rlength - 1);
+
+   let answer = (string.length - repl.length) / sub.length;
+   console.log(answer)
+
+
+
+   var count = 0;
+
+   for(var i = 0; i < string.length; i++) {
+   if(string.indexOf(sub, i)){
+   count = count + 1
+   } 
+   }
+   console.log(count)    
+
+   function getSubString(string, sub){
+   var count = 0;
+   for(var i = 0; i < string.length; i++){
+   if(string.substring(i).startsWith(sub)){
+   count++;
+   }
+   }
+   return count;
+   }
+
+
+
+   var count = getSubString(string, sub)
+
+
+   // Write a JavaScript function to find out if a number is a natural number or not.
+   var x = Math.random();
+
+   x = (x*100);
+
+   x = Math.round(x)
+
+   if(Number.isInteger(x)) {console.log('is integer')}else console.log('isn\'t integer')
+
+
+
+   //Write a JavaScript function to calculate the sum of values in an array
+
+   var arrayOfRandomNumbers = [9, 88, 63, 1, 4 ]
+
+
+   function isSumFifty(firstNumber, secondNumber){
+   if (firstNumber + secondNumber === 50){
+   reutnr true
+   } else {
+   return false
+   }
+   }
+
+   function isAAndBEqual(a, b){
+   if (a === b){
+   console.log(true)
+   } else {
+   return false
+   }
+   }
+
+
+
+
+   console.log(isSumFifty(25,25))
+
+   function sumOfArray(x){
+   for(var i = 0; i < x.length; i++){
+   
+   }
+   }
+
+
+
+   function currentYear(){
+   var d = new Date().getFullYear()
+   return d
+   }
+
+   function currentDay(){
+   var d = new Date().getDay()
+   d = d + 1
+   return d
+   }
+
+
+   function currentTime(){
+   var d = new Date();
+   var a = d.getHours()
+   var b = d.getMinutes()
+   var c = d.getSeconds()
+   var e = "the time is: " + a + ":" + b + ' and ' + c + ' seconds'
+   return e
+   }
+
+
+
+
+
+   console.log(currentTime())
+
+
+   function Person(name, age){
+   this.firstName = name;
+   this.age = age;
+   }
+
+   var teacher = new Person("Natelia", 30);
+   var student = new Person("Naa", 29);
+
+   console.log(student)
+ */
+
+var film = {
+  init: function(title, year){
+    this.title = title;
+    this.year = year;
+  },
+  descrire: function(){
+    var description = this.title + "(" + this.year + ")"
+    
+  }
+};
+
+
+var cad = Object.create(film)
+
+var car = {make: "Honda", age:"30"}
+car.availableColors = ["green", "blue"]
